@@ -17,7 +17,7 @@
 # Mari
 path.linux.mari: 'Mari3.3'
 path.mac.mari: '/Applications/Mari3.3v1/Mari3.3v1.app'
-path.windows.mari: 'C:\Program Files\Mari3.3v1\Bundle\bin\Mari3.3v1.exe'
+path.windows.mari: 'C:\Program Files\Mari3.0v2\Bundle\bin\Mari3.0v2'
 
 # Motionbuilder
 path.windows.motionbuilder: 'C:\Program Files\Autodesk\MotionBuilder 2018\bin\x64\motionbuilder.exe'
@@ -25,7 +25,7 @@ path.windows.motionbuilder: 'C:\Program Files\Autodesk\MotionBuilder 2018\bin\x6
 # Hiero
 path.linux.hiero: 'Nuke10.5'
 path.mac.hiero: '/Applications/Nuke10.5v7/Hiero10.5v7.app'
-path.windows.hiero: 'C:\Program Files\Nuke10.5v7\Nuke10.5.exe'
+path.windows.hiero: 'C:\Program Files\Nuke10.5v1\Nuke10.5.exe'
 
 # RV
 path.linux.rv: 'rv'
