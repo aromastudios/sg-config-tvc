@@ -82,6 +82,10 @@ settings.tk-multi-publish2.3dsmax.shot_step:
     hook: "{self}/publish_file.py:{engine}/tk-multi-publish2/basic/publish_session.py"
     settings:
         Publish Template: max_shot_publish
+  - name: Publish to Shotgun
+    hook: "{self}/publish_file.py:{engine}/tk-multi-publish2/basic/publish_session_geometry.py"
+    settings:
+        Publish Template: shot_alembic_cache
   help_url: *help_url
   location: "@apps.tk-multi-publish2.location"
 
@@ -154,6 +158,23 @@ settings.tk-multi-publish2.mari.asset_step:
   help_url: *help_url
   location: "@apps.tk-multi-publish2.location"
 
+# shot_step
+settings.tk-multi-publish2.mari.shot_step:
+  collector: "{self}/collector.py:{engine}/tk-multi-publish2/basic/collector.py"
+  publish_plugins:
+  - name: Publish to Shotgun
+    hook: "{self}/publish_file.py"
+    settings: {}
+  - name: Publish to Shotgun
+    hook: "{self}/publish_file.py:{engine}/tk-multi-publish2/basic/publish_mari_textures.py"
+    settings:
+      Publish Template: shot_mari_texture_tif
+  - name: Upload for review
+    hook: "{self}/upload_version.py"
+    settings: {}
+  help_url: *help_url
+  location: "@apps.tk-multi-publish2.location"
+
 ################################################################################
 
 # ---- Maya
@@ -203,6 +224,10 @@ settings.tk-multi-publish2.maya.shot_step:
     hook: "{self}/publish_file.py:{engine}/tk-multi-publish2/basic/publish_session.py"
     settings:
         Publish Template: maya_shot_publish
+  - name: Publish to Shotgun
+    hook: "{self}/publish_file.py:{engine}/tk-multi-publish2/basic/publish_session_geometry.py"
+    settings:
+        Publish Template: shot_alembic_cache
   help_url: *help_url
   location: "@apps.tk-multi-publish2.location"
 
@@ -364,7 +389,7 @@ settings.tk-multi-publish2.motion_builder.asset_step:
     settings: {}
   - name: Publish to Shotgun
     hook: "{self}/publish_file.py:{engine}/tk-multi-publish2/basic/publish_session.py"
-    settings: 
+    settings:
       Publish Template: mobu_asset_publish
   help_url: *help_url
   location: "@apps.tk-multi-publish2.location"
@@ -386,9 +411,7 @@ settings.tk-multi-publish2.motion_builder.shot_step:
     settings: {}
   - name: Publish to Shotgun
     hook: "{self}/publish_file.py:{engine}/tk-multi-publish2/basic/publish_session.py"
-    settings: 
+    settings:
       Publish Template: mobu_shot_publish
   help_url: *help_url
   location: "@apps.tk-multi-publish2.location"
-
-
