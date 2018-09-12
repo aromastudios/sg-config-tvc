@@ -19,6 +19,7 @@ includes:
 settings.tk-multi-loader2.3dsmax:
   action_mappings:
     3dsmax Scene: [import, reference]
+    OBJ File: [import]
     Alembic Cache: [import]
     Image: [texture_node]
     Rendered Image: [texture_node]
@@ -46,6 +47,7 @@ settings.tk-multi-loader2.3dsmax:
 settings.tk-multi-loader2.houdini:
   action_mappings:
     Alembic Cache: [import]
+    OBJ File: [import]
     Houdini Scene: [merge]
     Image: [file_cop]
     Photoshop Image: [file_cop]
@@ -75,6 +77,7 @@ settings.tk-multi-loader2.houdini:
 settings.tk-multi-loader2.mari:
   action_mappings:
     Alembic Cache: [geometry_import]
+    OBJ File: [geometry_import]
   entities:
   - caption: Assets
     entity_type: Asset
@@ -96,6 +99,7 @@ settings.tk-multi-loader2.mari:
 settings.tk-multi-loader2.maya:
   action_mappings:
     Alembic Cache: [reference, import]
+    OBJ File: [reference, import]
     Image: [texture_node, image_plane]
     Maya Scene: [reference, import]
     Photoshop Image: [texture_node, image_plane]
