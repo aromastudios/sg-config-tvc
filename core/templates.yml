@@ -180,6 +180,12 @@ paths:
     ##########################################################################################
     # Shot level paths
     #
+    
+    #
+    # Alembic caches
+    #
+    shot_alembic_cache:
+        definition: '@shot_root/publish/caches/{Shot}.{Step}.v{version}.abc'    
 
     #
     # Flame
