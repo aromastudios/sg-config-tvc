@@ -17,6 +17,7 @@ includes:
 - ./includes/frameworks.yml
 - ./includes/settings/tk-3dsmaxplus.yml
 - ./includes/settings/tk-houdini.yml
+- ./includes/settings/tk-mari.yml
 - ./includes/settings/tk-maya.yml
 - ./includes/settings/tk-motionbuilder.yml
 - ./includes/settings/tk-nuke.yml
@@ -31,6 +32,7 @@ engines:
   # referencing the DCC-specific shot_step environments included above
   tk-3dsmaxplus: "@settings.tk-3dsmaxplus.shot_step"
   tk-houdini: "@settings.tk-houdini.shot_step"
+  tk-mari: "@settings.tk-mari.shot_step"
   tk-maya: "@settings.tk-maya.shot_step"
   tk-motionbuilder: "@settings.tk-motionbuilder.shot_step"
   tk-nuke: "@settings.tk-nuke.shot_step"
